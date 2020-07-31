@@ -3,10 +3,11 @@ this is my first document ini gitbranch for 1the edit section on the area...
 
 
 
-
-firest2-Second modification...
+<<<<<<< HEAD
+firest-Second modification...
 =======
-Second-Second modification..
+Second-Second modification...
+>>>>>>> e149692... secondrebase
 ====================
 
 
