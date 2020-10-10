@@ -6,7 +6,6 @@ files:
 hooks:
   BeforeInstall:
   - location: Building_Patch_Files.sh
-  - location: Post_build.sh
   - location: Backup_script.sh
     timeout: 300
     runas: root
