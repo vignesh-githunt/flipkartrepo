@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
-
+files:
+  - source: /Deployment_Files_and_Path_ORGINAL_FORMAT.txt
+    destination: /opt/wildfly/standalone/deployment/
 hooks:
   BeforeInstall:
   - location: Building_Patch_Files.sh
