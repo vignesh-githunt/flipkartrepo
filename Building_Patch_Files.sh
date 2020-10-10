@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Giving permission for Building_Patch_Files.sh"
+chmod 777 Building_Patch_Files.sh
 for word in $(<  $CODEDEPLOY_SRC_DIR/$(date +%d%b%Y)/Deployment_Files_and_Path.txt )
 do
 INPUT_FILE="$(echo "$word"  |tr '/' ' ' | awk 'NF>0{print $NF}')"
