@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
-
+files:
+  - source: {{source_path}}
+    destination: {{destination_path}}
 hooks:
   BeforeInstall:
   - location: Building_Patch_Files.sh
