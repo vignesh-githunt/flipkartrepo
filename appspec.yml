@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+hooks:
+  BeforeInstall:
+  - location: Backup_script.sh
+    timeout: 100
+    runas: root
+  AfterInstall:
+  - location: Deploy_and_Rollback_script.sh
+    timeout: 300
+    runas: root

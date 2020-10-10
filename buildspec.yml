@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "Giving permission for Building_Patch_Files.sh"
+      - chmod 777 Building_Patch_Files.sh
+  build:
+    commands:
+      - echo "Executiing Building_Patch_Files.sh"
+      - ./Building_Patch_Files.sh
+      - echo "checking is the patches are builded"
+      - find opt/ -type f -mmin -10  | awk '{print $1}'
+  post_build:
+    commands:
+      - echo "Building the files to tar format to deploy in to ec2-instance (QA1)"
+      - tar -cvf opt.tar.gz opt
+artifacts:
+  files:
+    - opt.tar.gz
+    - appspec.yml
+    - Backup_script.sh
+    - Deploy_and_Rollback_script.sh
+  discard-paths: yes

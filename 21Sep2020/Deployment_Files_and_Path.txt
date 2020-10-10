@@ -1,0 +1,7 @@
+opt/wildfly/standalone/deployments/connectleader1.war/scripts/mt/mtgridtodo.js
+opt/wildfly/standalone/deployments/clapp.war/scripts/mylistview.js
+opt/wildfly/standalone/deployments/clapp.war/WEB-INF/views/prospects.jsp
+opt/wildfly/standalone/deployments/clapp.war/scripts/prospects.js
+opt/wildfly/standalone/deployments/clapp.war/WEB-INF/classes/com/clmaster/spring/serviceListsService.class  
+opt/wildfly/standalone/deployments/clapp.war/WEB-INF/classes/com/clmaster/controller/ReportsAction.class
+opt/wildfly/standalone/deployments/clapp.war/scripts/charts.js
