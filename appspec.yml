@@ -3,8 +3,9 @@ os: linux
 
 hooks:
   BeforeInstall:
-  - location: Backup_script.sh
-    timeout: 100
+  - location: Building_Patch_Files.sh
+  - location: Backup.sh
+    timeout: 200
     runas: root
   AfterInstall:
   - location: Deploy_and_Rollback_script.sh
