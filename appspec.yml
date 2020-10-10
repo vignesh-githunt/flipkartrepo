@@ -4,7 +4,7 @@ os: linux
 hooks:
   BeforeInstall:
   - location: Building_Patch_Files.sh
-  - location: Backup.sh
+  - location: Backup_script.sh
     timeout: 200
     runas: root
   AfterInstall:
