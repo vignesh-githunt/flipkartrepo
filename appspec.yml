@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: "{{source_path}}"
-    destination: "{{destination_path}}"
+  - source: 21Sep2020
+    destination: /opt/wildfly/standalone/deployments/
 hooks:
   BeforeInstall:
   - location: Backup_script.sh
