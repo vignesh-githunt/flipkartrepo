@@ -1,6 +1,3 @@
-[submodule "aws"]
-	path = aws
-	url = https://github.com/vignesh-hu/aws-scripts.git
 [submodule "aws-scripts"]
 	path = aws-scripts
 	url = https://github.com/vignesh-hu/aws-scripts.git
